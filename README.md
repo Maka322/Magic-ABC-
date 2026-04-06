@@ -28,7 +28,7 @@ Grupo de gestión de recursos multimedia, diseño de proyecto y desarrollo Front
   
 - Marcia Katerine Baquero Ruiz
 - Freddy Fernando Alayón Cubillos 
--
+- Ivan Dario Chavez Vargas
 -
 -
 
