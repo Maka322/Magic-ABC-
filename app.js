@@ -13,7 +13,7 @@ const abecedario = [
     { l: "L", img: "img/l.png", p: "León" },
     { l: "M", img: "img/m.png", p: "Marrano" },
     { l: "N", img: "img/n.png", p: "Nutria" },
-    { l: "Ñ", img: "img/nn.png", p: "Ñandú" },
+    { l: "NN", img: "img/nn.png", p: "Ñandú" }, // Letra especial pondría NN para diferenciarla de N//
     { l: "O", img: "img/o.png", p: "Oso" },
     { l: "P", img: "img/p.png", p: "Perro" },
     { l: "Q", img: "img/q.png", p: "Queso" },
