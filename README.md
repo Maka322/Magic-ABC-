@@ -30,7 +30,7 @@ Grupo de gestión de recursos multimedia, diseño de proyecto y desarrollo Front
 - Freddy Fernando Alayón Cubillos 
 - Lucas Enrique Muñoz Ospina
 - Ivan Dario Chavez Vargas
--
--
+- Manuel Alejandro Gómez Piedrahíta
+
 
 ##  ¡Empieza a descubrir las letras!
