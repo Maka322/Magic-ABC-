@@ -24,7 +24,7 @@
 
 
 ## Equipo de Desarrollo
-- Grupo de gestión de recursos multimedia, diseño de proyecto y desarrollo Frontend.
+Grupo de gestión de recursos multimedia, diseño de proyecto y desarrollo Frontend.
   
 - Marcia Katerine Baquero Ruiz
 -  
