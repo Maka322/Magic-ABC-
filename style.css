@@ -77,9 +77,9 @@ header {
 }
 
 .mensaje-bienvenida {
-    font-size: 3rem;      /* Letra muy grande */
-    font-weight: 900;     /* Súper negrilla */
-    color: #333;          /* Color oscuro para resaltar */
+    font-size: 3rem;     
+    font-weight: 900;     
+    color: #333;          
     text-align: center;
     line-height: 1.2;
     padding: 20px;
