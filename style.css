@@ -6,11 +6,18 @@
 
 body { font-family: 'Comic Sans MS', sans-serif; background: var(--fondo); margin: 0; }
 
-header { background: white; padding: 1rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+header { 
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: linear-gradient(#000, #635f5f);
+    color: #fff;
+    border-radius: 0 0 40px 40px;
+}
 
 .contenedor-principal { display: flex; height: 85vh; }
 
-/* Galería (Izquierda) */
 .galeria-grid { 
     flex: 1; 
     display: grid; 
@@ -18,29 +25,31 @@ header { background: white; padding: 1rem; text-align: center; box-shadow: 0 4px
     gap: 15px; 
     padding: 20px;
     overflow-y: auto;
+    background: linear-gradient(90deg, #eef0ff, #0cdbe2);
+    border-radius: 40px 0 0;
 }
 
-/* Las Cartas */
 .carta {
     width: 80px; height: 100px;
-    background: white;
     border: 3px solid var(--secundario);
     border-radius: 12px;
     display: flex; align-items: center; justify-content: center;
     font-size: 2.5rem; cursor: pointer;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    background: linear-gradient(#0b175f, #0cdbe2);
+    color: #fff;
+    border: none;
+    box-shadow: 8px 8px 8px #222;
 }
 
 .carta:active { transform: rotateY(180deg); }
 
-/* Visor de imagenes (Derecho)*/
 .visor-derecho { 
     flex: 1; 
-    background: #FFE66D; 
+    background: linear-gradient(90deg, #0cdbe2, #0b175f);
     display: flex; align-items: center; justify-content: center;
-    border-left: 5px dashed var(--primario);
-    padding: 20px; 
+    border-radius: 0 40px 0 0;
 }
 
 #pantalla-imagen img { width: 300px; border-radius: 20px; border: 10px solid white; }
