@@ -27,7 +27,7 @@
 Grupo de gestión de recursos multimedia, diseño de proyecto y desarrollo Frontend.
   
 - Marcia Katerine Baquero Ruiz
--  
+- Freddy Fernando Alayón Cubillos 
 -
 -
 -
