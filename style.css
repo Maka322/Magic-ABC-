@@ -34,7 +34,7 @@ header { background: white; padding: 1rem; text-align: center; box-shadow: 0 4px
 
 .carta:active { transform: rotateY(180deg); } /* Efecto de giro rápido al tocar */
 
-/* Visor (Derecha) */
+/* Visor de imagenes (Derecho)*/
 .visor-derecho { 
     flex: 1; 
     background: #FFE66D; 
