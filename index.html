@@ -1,27 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>ABC Mágico  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotería de Letras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Aprende con Magia ✨</h1>
+        <h1>ABC Mágico-Lotería de Letras</h1>
         <div class="controles">
-            <button onclick="generarCartas('letras')">🔤 Ver Abecedario</button>
-            <button onclick="generarCartas('vocales')">🅰️ Ver Vocales</button>
-            <span class="contador">Vistas: <span id="cuenta">0</span></span>
+            <button onclick="cargarGaleria('completo')" class="btn-azul">ABC letras del abecedario</button>
+            <button onclick="cargarGaleria('vocales')" class="btn-morado">Te enseño las vocales</button>
+            <span id="contador">Vistas: 0</span>
         </div>
     </header>
 
     <main class="contenedor-principal">
-        <section id="galeria" class="galeria-grid"></section>
+        <section id="galeria" class="galeria-grid">
+            </section>
 
-        <section id="visor" class="visor-derecho">
+        <section id="visor" class="visor-contenedor">
             <div id="pantalla-imagen">
-                <h2>¡Haz clic en una letra!</h2>
-                <p>Aprender es una aventura</p>
+                <h2 class="mensaje-bienvenida">
+                    🚀 Selecciona una letra para descubrir la magia🔤
+                </h2>
             </div>
         </section>
     </main>

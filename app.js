@@ -1,48 +1,57 @@
-// Los datos: Letra + Imagen alusiva
-const datos = {
-    letras: [
-        { l: "A", img: "🍎" }, { l: "B", img: "🎈" }, { l: "C", img: "🏠" },
-        { l: "D", img: "🎲" }, { l: "E", img: "🐘" } // ... puedes seguir con todo el ABC
-    ],
-    vocales: [
-        { l: "A", img: "🍎" }, { l: "E", img: "🐘" }, { l: "I", img: "🍦" },
-        { l: "O", img: "🐻" }, { l: "U", img: "🍇" }
-    ]
-};
 
-let letrasVistas = new Set(); // Usamos Set para no contar la misma letra dos veces
+const abecedario = [
+    { l: "A", img: "img/a.png", p: "Ángel" },
+    { l: "B", img: "img/b.png", p: "Barco" },
+    { l: "C", img: "img/c.png", p: "Casa" },
+    { l: "D", img: "img/d.png", p: "Dado" },
+    { l: "E", img: "img/e.png", p: "Elefante" },
+    { l: "F", img: "img/f.png", p: "Flor" },
+    { l: "G", img: "img/g.png", p: "Gato" },
+    { l: "H", img: "img/h.png", p: "Hielo" },
+    { l: "I", img: "img/i.png", p: "Iglesia" },
+    { l: "J", img: "img/j.png", p: "Jirafa" },
+    { l: "K", img: "img/k.png", p: "Koala" },
+    { l: "L", img: "img/l.png", p: "Luna" },
+    { l: "M", img: "img/m.png", p: "Manzana" },
+    { l: "N", img: "img/n.png", p: "Nube" },
+    { l: "Ñ", img: "img/nn.png", p: "Ñandú" }, // Usamos 'nn' para evitar problemas con la Ñ en archivos compañeros//
+    { l: "O", img: "img/o.png", p: "Oso" },
+    { l: "P", img: "img/p.png", p: "Perro" },
+    { l: "Q", img: "img/q.png", p: "Queso" },
+    { l: "R", img: "img/r.png", p: "Ratón" },
+    { l: "S", img: "img/s.png", p: "Sol" },
+    { l: "T", img: "img/t.png", p: "Tren" },
+    { l: "U", img: "img/u.png", p: "Uva" },
+    { l: "V", img: "img/v.png", p: "Vaca" },
+    { l: "W", img: "img/w.png", p: "Waffle" },
+    { l: "X", img: "img/x.png", p: "Xilófono" },
+    { l: "Y", img: "img/y.png", p: "Yate" },
+    { l: "Z", img: "img/z.png", p: "Zebra" }
+];
 
-function generarCartas(tipo) {
-    const contenedor = document.getElementById('galeria');
-    contenedor.innerHTML = ""; // Limpiar la galería anterior
+// Visualización: Mostrar la imagen y el nombre de la letra seleccionada
+//
 
-    datos[tipo].forEach(item => {
-        const div = document.createElement('div');
-        div.className = 'carta';
-        div.innerText = item.l;
-        
-        div.onclick = () => mostrarEnVisor(item);
-        contenedor.appendChild(div);
+function seleccionarLetra(letraPresionada) {
+    const visor = document.getElementById("pantalla-imagen");
+    const encontrada = abecedario.find(item => item.l === letraPresionada);
+
+    if (encontrada) {
+         visor.innerHTML = `
+            <img src="${encontrada.img}" alt="${encontrada.p}" class="img-animada">
+            <h2>${encontrada.l} de ${encontrada.p}</h2>
+        `;
+    }
+}
+
+function cargarGaleria() {
+    const galeria = document.getElementById("galeria"); 
+    
+    abecedario.forEach(letra => {
+        const boton = document.createElement("button");
+        boton.innerText = letra.l;
+        boton.onclick = () => seleccionarLetra(letra.l);
+        galeria.appendChild(boton);
     });
 }
 
-function mostrarEnVisor(item) {
-    const visor = document.getElementById('pantalla-imagen');
-    // Mostramos el emoji o imagen grande
-    visor.innerHTML = `
-        <h1 style="font-size: 5rem; margin: 0;">${item.img}</h1>
-        <h2>${item.l} de ${obtenerNombre(item.l)}</h2>
-    `;
-
-    // Contador
-    letrasVistas.add(item.l);
-    document.getElementById('cuenta').innerText = letrasVistas.size;
-}
-
-function obtenerNombre(letra) {
-    const nombres = { "A": "Manzana", "B": "Balón", "C": "Casa", "D": "Dado", "E": "Elefante", "I": "Iglú", "O": "Oso", "U": "Uva" };
-    return nombres[letra] || "Objeto";
-}
-
-// Empezar con el abecedario por defecto
-generarCartas('letras');

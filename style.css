@@ -43,13 +43,13 @@ header {
     box-shadow: 8px 8px 8px #222;
 }
 
-.carta:active { transform: rotateY(180deg); } /* Efecto de giro rápido al tocar */
+.carta:active { transform: rotateY(180deg); }
 
 .visor-derecho { 
     flex: 1; 
     background: linear-gradient(90deg, #0cdbe2, #0b175f);
     display: flex; align-items: center; justify-content: center;
-    border-radius: 0 40px 0;
+    border-radius: 0 40px 0 0;
 }
 
 #pantalla-imagen img { width: 300px; border-radius: 20px; border: 10px solid white; }
@@ -62,4 +62,13 @@ header {
     color: #fff;
     border: none;
     box-shadow: 8px 8px 8px #222;
+}
+
+.mensaje-bienvenida {
+    font-size: 3rem;      /* Letra muy grande */
+    font-weight: 900;     /* Súper negrilla */
+    color: #333;          /* Color oscuro para resaltar */
+    text-align: center;
+    line-height: 1.2;
+    padding: 20px;
 }
