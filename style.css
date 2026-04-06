@@ -32,7 +32,7 @@ header { background: white; padding: 1rem; text-align: center; box-shadow: 0 4px
     transform-style: preserve-3d;
 }
 
-.carta:active { transform: rotateY(180deg); } /* Efecto de giro rápido al tocar */
+.carta:active { transform: rotateY(180deg); }
 
 /* Visor de imagenes (Derecho)*/
 .visor-derecho { 
@@ -40,6 +40,7 @@ header { background: white; padding: 1rem; text-align: center; box-shadow: 0 4px
     background: #FFE66D; 
     display: flex; align-items: center; justify-content: center;
     border-left: 5px dashed var(--primario);
+    padding: 20px; 
 }
 
 #pantalla-imagen img { width: 300px; border-radius: 20px; border: 10px solid white; }
@@ -52,4 +53,13 @@ header { background: white; padding: 1rem; text-align: center; box-shadow: 0 4px
     color: #fff;
     border: none;
     box-shadow: 8px 8px 8px #222;
+}
+
+.mensaje-bienvenida {
+    font-size: 3rem;      /* Letra muy grande */
+    font-weight: 900;     /* Súper negrilla */
+    color: #333;          /* Color oscuro para resaltar */
+    text-align: center;
+    line-height: 1.2;
+    padding: 20px;
 }
