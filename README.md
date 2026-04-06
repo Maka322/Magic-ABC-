@@ -24,6 +24,12 @@
 
 
 ## Equipo de Desarrollo
-* Tu Nombre:** Gestión de recursos multimedia y diseño de proyecto y desarrollo Frontend.
+- Grupo de gestión de recursos multimedia y diseño de proyecto y desarrollo Frontend.
+  
+- Marcia Katerine Baquero Ruiz
+-  
+-
+-
+-
 
 ##  ¡Empieza a descubrir las letras!
