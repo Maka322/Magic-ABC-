@@ -1,46 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotería de Letras</title>
+    <title>La loteria de las letras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>ABC Mágico-Lotería de Letras</h1>
+        <h1>✨ ABC Mágico - La loteria de las letras✨</h1>
         <div class="controles">
-            <button onclick="cargarGaleria('completo')" class="btn-azul">ABC letras del abecedario</button>
-            <button onclick="cargarGaleria('vocales')" class="btn-morado">Te enseño las vocales</button>
-            <span id="contador">Vistas: 0</span>
+            <button onclick="verTodoElABC()">ABC Completo</button>
+            <button onclick="verSoloVocales()">Solo Vocales</button>
         </div>
     </header>
 
     <main class="contenedor-principal">
-        <section id="galeria" class="galeria-grid">
-            </section>
+        <section id="galeria" class="galeria-grid"></section>
 
-        <section id="visor" class="visor-contenedor">
+        <aside class="visor-derecho">
             <div id="pantalla-imagen">
-                <h2 class="mensaje-bienvenida">
-                    🚀 Selecciona una letra para descubrir la magia🔤
-                </h2>
+                <div class="mensaje-bienvenida">
+                    <h2>✨Toca una letra y descubre su secreto ✨</h2>
+                </div>
             </div>
-        </section>
+            
+           <div class="creditos">
+    <p><strong>Colaboradores:</strong></p>
+    <p>• Marcia Baquero</p>
+    <p>• Freddy Alayón </p>
+    <p>• Lucas Muñoz</p>
+    <p>• Ivan Chavez</p>
+    <p>• Manuel Gómez</p>
+</div>
+        </aside>
     </main>
-    <footer class="seccion-final-del-equipo-de-rescate">
-        <h2>Equipo de rescate</h2>
-        <p></p>
-        <div class="contenedor-de-integrantes-del-equipo">
-            <div class="tarjeta-de-integrante">Marcia Katerine Baquero Ruiz</div>
-            <div class="tarjeta-de-integrante">Freddy Fernando Alayón Cubillos</div>
-            <div class="tarjeta-de-integrante">Iván Chavez</div>
-            <div class="tarjeta-de-integrante">Lucas Enrique Muñoz Ospina</div>
-            <div class="tarjeta-de-integrante">Manuel Alejandro Gomez Piedrahita</div>
-        </div>
-    </footer>
 
     <script src="app.js"></script>
 </body>
